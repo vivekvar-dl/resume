@@ -1,0 +1,193 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% HEADING
+\begin{center}
+    \textbf{\Huge \scshape V SaraVivek} \\ \vspace{1pt}
+    \small +91 9618934336 $|$ \href{mailto:vivekvarikuti22@gmail.com}{\underline{vivekvarikuti22@gmail.com}} $|$ 
+    \href{https://github.com/vivekvar-dl}{\underline{github.com/vivekvar-dl}}
+\end{center}
+
+% PROFESSIONAL SUMMARY
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        MLOps Engineer with expertise in end-to-end ML pipeline orchestration, model deployment automation, and production ML system management. Proven experience in implementing CI/CD/CT pipelines, model monitoring, drift detection, and automated retraining workflows using Kubernetes, cloud platforms (AWS, Azure, GCP), and MLOps frameworks. Strong foundation in Python automation, containerization, and infrastructure-as-code. Demonstrated ability to operationalize Data Science projects and enhance organizational MLOps maturity through modern, agile approaches.
+    }}
+\end{itemize}
+
+% EDUCATION
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Usha Rama College of Engineering}{Telaprolu, AP}
+      {Bachelor of Technology in AI and ML; Computer Science Engineering}{Dec 2021 - May 2025}
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{MLOps Platforms}{: AWS SageMaker, Azure ML Studio, GCP Vertex AI, Kubeflow, MLflow} \\
+     \textbf{Cloud \& Infrastructure}{: AWS, Azure, GCP, Kubernetes, Docker, Terraform, AKS, EKS} \\
+     \textbf{CI/CD \& Automation}{: GitHub Actions, AWS CodePipeline, Airflow, Jenkins, GitLab CI} \\
+     \textbf{Programming \& Tools}{: Python, Bash/Unix, FastAPI, PySpark, Azure Databricks} \\
+     \textbf{ML/AI Frameworks}{: PyTorch, TensorFlow, CUDA, Scikit-learn, Pandas, NumPy} \\
+    }}
+ \end{itemize}
+
+% EXPERIENCE
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading  
+      {MLOps Engineer Intern}{Dec 2024 -- Mar 2025}  
+      {GGS Information Services}{On-site} 
+      \resumeItemListStart  
+        \resumeItem{Architected and deployed end-to-end MLOps pipelines for production ML models, implementing automated model deployment, monitoring, and retraining workflows using Kubernetes and cloud platforms}
+        \resumeItem{Developed comprehensive CI/CD/CT pipelines for ML model lifecycle management, reducing deployment time by 70\% and implementing automated drift detection and model retraining triggers}
+        \resumeItem{Optimized ML model performance through systematic debugging and profiling, achieving 30\% improvement in inference speed while implementing automated model versioning and experiment tracking}
+      \resumeItemListEnd 
+  \resumeSubHeadingListEnd
+
+% PROJECTS
+\section{Projects}
+\resumeProjectHeading
+{\textbf{Enterprise MLOps Platform} $|$ \emph{Kubernetes, AWS SageMaker, MLflow, FastAPI}}{}
+  \resumeItemListStart
+    \resumeItem{Designed and implemented a comprehensive MLOps platform using Kubernetes orchestration, AWS SageMaker for model training, and MLflow for experiment tracking, enabling automated model deployment and monitoring}
+    \resumeItem{Developed REST API services using FastAPI for model inference endpoints, implementing automated model versioning, A/B testing, and real-time performance monitoring with drift detection}
+    \resumeItem{Implemented CI/CD/CT pipelines using GitHub Actions and AWS CodePipeline, automating the complete ML lifecycle from data preprocessing to model deployment and monitoring}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Distributed ML Training Pipeline} $|$ \emph{PyTorch, VLLM, Ray, Kubernetes}}{}
+  \resumeItemListStart
+    \resumeItem{Engineered a production-ready distributed ML training pipeline using Ray and Kubernetes, implementing automated resource management, experiment tracking, and model versioning for 3B parameter models}
+    \resumeItem{Developed automated ML workflows using Airflow for orchestration, enabling 40\% cost reduction through intelligent resource allocation and automated model optimization pipelines}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Intelligent Monitoring System} $|$ \emph{Python, Azure ML Studio, Docker}}{}
+  \resumeItemListStart
+    \resumeItem{Built an intelligent monitoring system using Azure ML Studio and Docker containers, implementing automated incident detection, model drift monitoring, and real-time alerting for production ML systems}
+    \resumeItem{Developed automated data preprocessing pipelines and model retraining workflows, reducing manual intervention by 80\% and ensuring continuous model performance optimization}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Cloud-Native ML Platform} $|$ \emph{GCP Vertex AI, Terraform, Kubeflow}}{}
+  \resumeItemListStart
+    \resumeItem{Architected a cloud-native ML platform using GCP Vertex AI and Kubeflow, implementing infrastructure-as-code with Terraform for automated environment provisioning and scaling}
+    \resumeItem{Developed automated model deployment pipelines with integrated testing, monitoring, and rollback capabilities, ensuring 99.9\% uptime for production ML services}
+\resumeItemListEnd
+
+% PUBLICATIONS
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{MLOps Best Practices for Production ML Systems}}{}
+    \resumeItemListStart
+      \resumeItem{Published research on implementing MLOps workflows for production ML systems, covering automated deployment, monitoring, and retraining strategies for enterprise-scale AI applications}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+ %ACHIEVEMENTS
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{MLOps Leadership \& Innovation}}{}
+      \vspace{0.02em} % Add space here
+      \resumeItemListStart
+        \resumeItem{Selected for Microsoft for Startups Founders Hub Program (Jan 2025) - recognized for implementing modern, agile MLOps approaches and automated Data Science workflows}
+        \resumeItem{MLOps Certification - AWS SageMaker and Azure ML Studio (2024)}
+      \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{Technical Excellence \& Awards}}{}
+      \vspace{0.02em} % Add space here
+      \resumeItemListStart
+        \resumeItem{Won 1st prize in national-wide AI agent hackathon conducted by the AP police - demonstrated rapid MLOps implementation and production deployment capabilities}
+        \resumeItem{Kubernetes Administrator Certification (CKA) - 2024}
+        \resumeItem{Elite Certification in NPTEL Blockchain Technology - May 2024}
+        \resumeItem{All India Rank 2000 in JEE Mains Paper-2 Architecture (80,000+ candidates) - April 2023}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
